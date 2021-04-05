@@ -86,6 +86,7 @@ img  {
 }
 
 .btn {
+  box-sizing: border-box;
   font-size: 1rem;
   line-height: 1.5rem;
   display: inline-flex;
@@ -93,8 +94,28 @@ img  {
   font-weight: 600;
   font-family: inherit;
   text-decoration: none;
+  border: none;
+  background: none;
+  background-image: none !important;
   cursor: pointer;
   appearance: none;
+}
+
+.btn-primary--blue {
+  min-width: 6.25em;
+  padding: 1em 1.5em;
+  color: #fff !important;
+  border: .0625em solid currentColor;
+  border-radius: 2.75em;
+  background-color: #372ccd;
+}
+
+.btn-primary--blue:hover {
+  background-color: #292393;
+}
+
+.btn-primary--blue:active {
+  background-color: #2c26ab;
 }
 
 .btn-secondary {
@@ -106,29 +127,45 @@ img  {
 }
 
 .btn-secondary--yellow {
-  color: #0b0b2b;
+  color: #0b0b2b !important;
 }
 
 .btn-secondary--yellow:hover {
-  background-color: #f5edc6;
+  background-color: #f5edc6 !important;
 }
 
 .btn-secondary--yellow:active {
-  background-color: #fcf4cb;
+  background-color: #fcf4cb !important;
 }
 
 .btn-secondary--blue {
-  color: #fff;
+  color: #fff !important;
 }
 
 .btn-secondary--blue:hover {
-   background-color: #292393;
+   background-color: #292393 !important;
  }
 
 .btn-secondary--blue:active {
-   background-color: #2c26ab;
+   background-color: #2c26ab !important;
  }
 
+.btn-tertiary {
+  display: inline-block;
+  color: #0b0b2b !important;
+  text-align: center;
+  text-decoration: underline !important;
+  text-underline-offset: 0.375em;
+  background: none;
+}
+
+.btn-tertiary:hover {
+   color: #372ccd !important;
+ }
+
+.btn-tertiary:active {
+   color: #12123d !important;
+ }
 
 .is-bgc-sand-yellow {
   background-color: #fff8dc;
@@ -167,4 +204,13 @@ img  {
 .vision-title {
   font-weight: 700;
   font-size: 0.75em;
+}
+
+.slide--full {
+  padding: 0;
+}
+
+.slide--full iframe {
+  width: 100%;
+  height: 100%;
 }
